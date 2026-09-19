@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons</title>
+</head>
+<body>
+    <!--button tag for navigating to next page-->
+    <a href="index.html" target="_blank">
+        <button style="border-radius: 25px; background-color: brown; color: white;">next page</button>
+    </a>
+    <br>
+    <br>
+    <!--button tag for navigating to a link-->
+    <a href="https://www.google.com" target="_blank">
+        <button style="border-radius: 25px; background-color: lightblue; color: black;">Google</button>
+    </a>
+    <br>
+    <br>
+    <!--button tag for executing a JavaScript function-->
+    <button onclick="doSomething()">Do something</button>
+    <p id="greeting">Hello</p>
+    <script>
+        function doSomething() {
+            document.getElementById("greeting").innerHTML = "Goodbye";
+        }
+    </script>
+</body>
+</html>
