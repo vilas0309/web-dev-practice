@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <!-- This is a simple form example -->
+    <form method="post" action="submit.php">
+        <!-- Form fields will go here -->
+        <label for="name">Name:</label>
+        <!-- Input field for text -->
+        <input type="text" id="name" placeholder="Enter your name"><br>
+        <label for="password">Password:</label>
+        <!-- Input field for password -->
+        <input type="password" id="password" required><br>
+        <label for="email">Email:</label>
+        <!-- Input field for email -->
+        <input type="email" id="email" placeholder="abc@xyz.com"><br>
+        <label for="age">Age:</label>
+        <!-- Input field for number -->
+        <input type="number" id="age" min="1" max="100"><br>
+        <!-- Input fields to select single option -->
+        <label for="gender">Gender:</label>
+            <input type="radio" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" value="other">
+            <label for="other">Other</label><br>
+        <label for="country">Country:</label>
+        <!-- Select field to select an option -->
+        <select id="country">
+            <option value="India">India</option>
+            <option value="canada">Canada</option>
+            <option value="uk">UK</option>
+        </select><br>
+        <label for="subscribe">Subscribe to newsletter:</label>
+        <!-- Checkbox for subscription -->
+        <input type="checkbox" id="subscribe" name="subscribe"><br>
+        <label for="feedback">Feedback:</label>
+        <!-- Textarea to enter the feedback -->
+        <textarea id="feedback" name="feedback" placeholder="Enter your feedback" rows="4" cols="10"></textarea><br>
+        <!-- Reset and submit buttons -->
+        <input type="reset">
+        <input type="submit">
+    </form>
+</body>
+</html>
