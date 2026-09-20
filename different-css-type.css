@@ -1,0 +1,19 @@
+/* This external CSS file is linked to the HTML file to style the paragraphs with different colors and background colors for odd and even paragraphs. */
+#p1{
+    color:purple;
+}
+#p2{
+    color:blue;
+}
+#p3{
+    color:green;
+}
+#p4{
+    color:orange;
+}
+.odd{
+    background-color: pink;
+}
+.even{
+    background-color: lightblue;
+}
