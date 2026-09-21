@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+    <style>
+        /*The position property specifies the type of positioning method used for an element (static, relative, absolute, fixed, or sticky).*/
+        #box1{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(255, 0, 0);
+            /*Relative positioning is used to position an element relative to its normal position. The top, right, bottom, and left properties are used to move the element from its normal position.*/
+            position: relative;
+            top: 25px;
+            left: 25px;
+        }
+        #box2{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(0, 255, 0);
+            /*Absolute positioning is used to position an element relative to its nearest positioned ancestor (instead of positioned relative to the viewport, like fixed). The top, right, bottom, and left properties are used to move the element from its normal position.*/
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+        #box3{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(0, 0, 255);
+            /*Fixed positioning is used to position an element relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to move the element from its normal position.*/
+            position: fixed;
+            left:85%;
+        }
+        .box4{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(255, 255, 0);
+            /*Sticky positioning is used to position an element based on the user's scroll position. A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The top, right, bottom, and left properties are used to move the element from its normal position.*/
+            position: sticky;
+            top: 10px;
+        }
+        .box5{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(255, 0, 255);
+            /*Static positioning is the default positioning for all elements. The top, right, bottom, and left properties have no effect on a statically positioned element.*/
+            position: static;
+            top: 10px;
+        }
+        </style>
+</head>
+<body>
+    <div id="box1">
+        <div id="box2"></div>
+    </div>
+    <div id="box3"></div>
+    <p>lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+    <p>lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+    <p>lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+    <p>lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+    <p>lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+    <div class="box4"></div>
+    <p>lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+    <p>lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+    <p>lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+    <p>lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+    <p>lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+    <p>lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+    <p>lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+    <p>lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+    <div class="box5"></div>
+    <p>lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+    <p>lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+    <p>lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+    <p>lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+</body>
+</html>
