@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display property</title>
+    
+    <!--The display property specifies the display behavior (the type of rendering box) of an element.-->
+    <style>
+        /*inline-block: The element is formatted just like the inline element, where it does not start on a new line. However, you can set width and height values.*/
+
+        div{
+            background-color: rgb(240, 53, 53);
+            height: 100px;
+            width: 100px;
+            display:inline-block;
+            visibility:hidden
+        }
+         /*block: The element consumes the full width available, and it starts on a new line. This is default value for div element.
+        inline: The element does not start on a new line and only takes up as much width as necessary. This is default value for span element.*/
+        span{
+            background-color: rgb(92, 54, 218);
+            height: 100px;
+            width: 100px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div>Div</div>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum quas iste deleniti recusandae in laboriosam iusto dolorem aliquid corporis at omnis deserunt sit dolores, molestiae officiis, adipisci cum sunt ipsa?
+    <span>Span</span>
+</body>
+</html>
