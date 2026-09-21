@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdowm</title>
+    <style>
+        .dropdown{
+            display: inline-block;
+        }
+        .dropdown button{
+            background-color: azure;
+            border: none;
+            cursor: pointer;
+            padding: 10px 15px;
+        }
+        .dropdown a{
+            color: black;
+            display: block;
+            text-decoration: none;
+            padding: 10px;
+        }
+        .dropdown .content{
+            display: none;
+            position: absolute;
+            background-color: rgb(199, 210, 210);
+            min-width: 100px;
+            box-shadow: 2px 2px 5px ;
+        }
+        .dropdown:hover .content{
+            display: block;
+        }
+        .dropdown:hover button{
+            background-color: aquamarine;
+        }
+        .dropdown a:hover{
+            background-color:rgb(64, 245, 245);
+        }
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <button>Food</button>
+        <div class="content">
+            <a href="">Apple</a>
+            <a href="">Tomato</a>
+            <a href="">Banana</a>
+        </div>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae adipisci harum delectus! In dolorem tempora ex recusandae! Optio odio sunt beatae! Quisquam quis mollitia, quidem libero neque impedit ab earum!</p>
+</body>
+</html>
