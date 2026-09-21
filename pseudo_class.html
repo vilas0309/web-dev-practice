@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo classes</title>
+    <style>
+        button{
+            /*The :hover pseudo-class is used to select elements when the user hovers over them with a pointing device, such as a mouse. The :hover pseudo-class can be used to change the appearance of an element when the user hovers over it.*/
+            background-color: rgb(255, 0, 0);
+        }
+        button:hover{
+            background-color: rgb(0, 255, 0);
+        }
+        button:active{
+            /*The :active pseudo-class is used to select elements when they are being activated by the user, such as when a button is being clicked. The :active pseudo-class can be used to change the appearance of an element when it is being activated by the user.*/
+            background-color: rgb(0, 0, 255);
+        }
+        a:link{
+            /*The :link pseudo-class is used to select links that have not yet been visited by the user. The :link pseudo-class can be used to change the appearance of links that have not yet been visited by the user.*/
+            color: rgb(255, 0, 0);
+        }
+        a:visited{
+            /*The :visited pseudo-class is used to select links that have already been visited by the user. The :visited pseudo-class can be used to change the appearance of links that have already been visited by the user.*/
+            color: hsl(177, 83%, 66%);
+        }
+        a:hover{
+            /*The :hover pseudo-class is used to select elements when the user hovers over them with a pointing device, such as a mouse. The :hover pseudo-class can be used to change the appearance of an element when the user hovers over it.*/
+            color: rgb(0, 255, 0);
+        }
+        a.active{
+            /*The :active pseudo-class is used to select elements when they are being activated by the user, such as when a link is being clicked. The :active pseudo-class can be used to change the appearance of an element when it is being activated by the user.*/
+            color: rgb(253, 40, 40);
+        }
+        ul li:nth-child(odd){
+            /*The :nth-child() pseudo-class is used to select elements based on their position in a parent element. The :nth-child() pseudo-class can take one or more arguments, which can be a number, a keyword, or a formula.*/
+            background-color: rgb(230, 106, 106);
+        }
+        </style>
+</head>
+<body>
+    <button>Click</button><br>
+    <a href="https://google.com">Google</a>
+    <ul>
+        <li>This is #1</li>
+        <li>This is #2</li>
+        <li>This is #3</li>
+        <li>This is #4</li>
+        <li>This is #5</li>
+        <li>This is #6</li>
+        <li>This is #7</li>
+        <li>This is #8</li>
+        <li>This is #9</li>
+    </ul>
+</body>
+</html>
