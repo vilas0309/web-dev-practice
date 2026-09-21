@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinators</title>
+    <!-- Combinators are used to select elements based on their relationship with other elements. -->
+    <style>
+        .container{
+            border: 2px solid;
+        }
+        /*The descendant combinator (space) selects all elements that are descendants of a specified element. The descendant combinator is represented by a space between two selectors.*/
+        .container p{
+            background-color: rgb(255, 0, 0);
+        }
+        /*The child combinator (>) selects all elements that are a direct child of a specified element. The child combinator is represented by a greater-than sign (>) between two selectors.*/
+        .container > p{
+            background-color: rgb(0, 255, 0);
+        }
+        /*The general sibling combinator (~) selects all elements that are siblings of a specified element. The general sibling combinator is represented by a tilde (~) between two selectors.*/
+        .container ~ p{
+            background-color: rgb(0, 0, 255);
+        }
+        /*The adjacent sibling combinator (+) selects all elements that are the next sibling of a specified element. The adjacent sibling combinator is represented by a plus sign (+) between two selectors.*/
+        .container + p{
+            background-color: rgb(255, 255, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>This is #1</p>
+        <p>This is #2</p>
+        <div>
+            <p>This is #3</p>
+            <p>This is #4</p>
+        </div>
+    </div>
+    <p>This is #5</p>
+    <p>This is #6</p>
+    <p>This is #7</p>
+</body>
+</html>
