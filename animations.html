@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        .batman{
+            width: 150px;
+            height: 150px;
+            animation-name: slideright;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: steps(10);
+        }
+
+        @keyframes slideright {
+            50%{transform: translateX(300%);}
+        }
+        @keyframes rotate {
+            40%{transform: rotate(360deg);}
+        }
+    </style>
+</head>
+<body>
+    <img  class="batman" src="images/Batman.png" alt="batman">
+</body>
+</html>
