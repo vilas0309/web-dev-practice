@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedsite Layout</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+        }
+        header{
+            background-color: hsl(0, 1%, 67%);
+            text-align: center;
+            padding: 25px;
+        }
+        .navbar{
+            background-color:  hsl(0, 0%, 24%);
+            height: 50px;
+        }
+        aside{
+            width: 20%;
+            float: left;
+            padding: 10px;
+        }
+        section{
+            width: 40%;
+            float: left;
+            padding: 10px;
+        }
+        article{
+            width: 40%;
+            float: left;
+            padding: 10px;
+        }
+        footer{
+            display: block;
+            clear: both;
+            background-color: hsl(0, 1%, 67%);
+            text-align: center;
+            padding: 25px;
+        }
+        @media screen and (max-width:600px) {
+            aside,article,section{
+                width: 100%;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <!--semactic tags:
+    <header>
+    <nav>
+    <main>
+    <section>
+    <aside>
+    <article>
+    <footer>
+        -->
+        <header>Header</header>
+
+        <nav class="navbar"></nav>
+
+        <main>
+            <aside>
+                <h3>This a aside</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ipsum quisquam illum quidem quaerat dolores autem dignissimos rem dolorem pariatur. Magni nemo necessitatibus minus quidem laudantium dolorem hic, corporis quasi!</p>
+            </aside>
+
+            <section>
+                <h3>Thibs is section</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis enim eaque veritatis iure autem officia fuga molestias officiis quisquam id ratione doloremque laboriosam in, error consequuntur repellendus quidem vel dicta!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla beatae nobis in accusamus voluptatem, natus laboriosam nostrum distinctio iusto earum totam recusandae pariatur assumenda animi unde suscipit quibusdam fuga voluptates.</p>
+            </section>
+
+            <article>
+                <h3>This is article</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum atque natus qui voluptatum rerum est labore quae reiciendis voluptatibus minima nemo eum dolorem consequuntur, quasi quibusdam in, hic mollitia iste?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet sint minus quae nesciunt accusantium itaque minima sit. Expedita eaque non a, laudantium quisquam animi, possimus maiores aliquid praesentium aperiam officiis.</p>
+            </article>
+        </main>
+
+        <footer>Footer</footer>
+</body>
+</html>
