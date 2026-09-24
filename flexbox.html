@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        /* .container{
+            display: flex;
+            flex-direction: row;
+        }
+        .container{
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+        .container{
+            display: flex;
+            flex-direction: column-reverse;
+        } */
+         /* .container{
+            display: flex;
+            border: 10px solid;
+            height: 90vh;
+            justify-content: start;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+        .container{
+            display: flex;
+            justify-content: end;
+        }
+        .container{
+            display: flex;
+            justify-content: space-between;
+            justify-content: space-around;
+            justify-content: space-evenly;
+        } */
+        /* .container{
+            display: flex;
+            border: 10px solid;
+            height: 90vh;
+            align-items:end;
+        } */
+        /* .container{
+            display: flex;
+            border: 10px solid;
+            height: 90vh;
+            flex-wrap: wrap;
+        } */
+        .container{
+            display: flex;
+            border: 10px solid;
+            height: 90vh;
+            flex-wrap: wrap;
+            align-content: flex-start;
+        }
+        .box{
+                width: 100px;
+                height: 100px;
+                font-size: 6em;
+                text-align: center;
+                border-radius: 15px;
+        }
+        #box1{
+            background-color: red;
+            order: 1;
+        }
+        #box2{
+            background-color: yellow;
+        }
+        #box3{
+            background-color: green;
+            order: -1;
+        }
+        #box4{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+</html>
