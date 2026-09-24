@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image gallery</title>
+    <style>
+        .gallery{
+            display: inline-block;
+            border: 2px solid hsl(0, 0%, 72%);
+            margin: 5px;
+            width: 200px;
+        }
+        .gallery .description{
+            padding: 10px;
+            text-align: center;
+        }
+        .gallery:hover{
+            border: 2px solid hsl(0, 1%, 25%);
+        }
+
+        .gallery img{
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <a target="_blank" href="images/pizza.jpg">
+        <img src="images/pizza.jpg" alt="pizza">
+        </a>
+        <div class="description">Pizza</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="images/salad.jpg">
+        <img src="images/salad.jpg" alt="pizza">
+        </a>
+        <div class="description">Salad</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="images/soup.jpg">
+        <img src="images/soup.jpg" alt="pizza">
+        </a>
+        <div class="description">Soup</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+#heading{
+    border: 2px solid black;
+    display: inline-block;
+    width: 300px;
+    position: relative;
+    text-align: center;
+    background-color: rgb(49, 7, 238);
+    color: rgb(255, 22, 22);
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px, -4px -4px 10px;
+}
+
+#heading:hover{
+    background-color: aqua;
+    color: rgb(73, 11, 216);
+}
+
+#bookmark-form.bookmark-url{
+    height: 50px;
+}
