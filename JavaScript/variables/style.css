@@ -1,0 +1,13 @@
+#p1{
+    color: blueviolet;
+}
+
+#p2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#p3{
+    background-color: black;
+    color: aliceblue;
+    display: inline;
+}

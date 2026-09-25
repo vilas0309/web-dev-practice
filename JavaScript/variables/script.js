@@ -33,4 +33,4 @@ let unemployed=true;
 
 document.getElementById('p1').textContent=`Your name is ${name}`;
 document.getElementById('p2').textContent=`Your age is ${age}`;
-document.getElementById('p3').textContent=`Is currently: ${unemployed}`;
+document.getElementById('p3').textContent=`Is currently unemployed: ${unemployed}`;
