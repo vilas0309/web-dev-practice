@@ -1,0 +1,25 @@
+body{
+    text-align: center;
+}
+
+#counter{
+    font-size: 10em;
+    margin: 0;
+}
+h1{
+    background-color: rgb(242, 49, 49);
+    display: inline-block;
+    border: 2px solid;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgb(25, 0, 255), -3px -3px 5px rgb(25, 0, 255);
+    margin: 0;
+}
+button{
+    background-color: rgb(0, 255, 255);
+    border-radius: 5px;
+    font-size: 1.5em;
+}
+
+button:hover{
+    background-color: rgb(46, 177, 177);
+}
