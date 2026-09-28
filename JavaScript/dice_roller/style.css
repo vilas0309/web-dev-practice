@@ -1,0 +1,31 @@
+.container{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+#submit{
+    font-size: 1.5rem;
+    padding: 5px 15px;
+    border: none;
+    background-color: aqua;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submit:hover{
+    background-color: hsl(180, 98%, 37%);
+}
+
+#submit:active{
+    background-color: hsl(180, 96%, 21%);
+}
+#numOfDice{
+    font-size: 1.5rem;
+    max-width: 200px;
+}
+
+#diceImages img{
+    width: 100px;
+    border-radius: 10px;
+}
