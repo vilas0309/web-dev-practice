@@ -1,0 +1,28 @@
+body{
+    background-image:url(nature-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+
+}
+
+.clock-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* border:20px solid; */
+}
+
+#clock{
+    font-family:monospace;
+    font-size: 6.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    backdrop-filter: blur(5px);
+    background-color: hsla(0, 0%, 100%, 0.116);
+    width: 100%;
+}
