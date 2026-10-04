@@ -1,0 +1,21 @@
+.btn{
+    margin: 10px;
+    font-size: 2rem;
+    background-color: rgb(56, 133, 184);
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.enabled{
+    background-color: rgb(75, 196, 85);
+}
+
+.hover{
+    text-shadow: 2px 2px 4px;
+    font-weight: bold;
+}
+
+.disabled{
+    background-color: rgb(84, 103, 115);
+}
