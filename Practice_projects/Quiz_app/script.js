@@ -80,7 +80,8 @@ function startQuiz(){
     console.log("quiz started");
     //reset vars
     currentQuestionIndex = 0;
-    score.textContent = 0;
+    score = 0;
+    scoreSpan.textContent = 0;
 
     startScreen.classList.remove("active");
     quizScreen.classList.add("active");
@@ -124,7 +125,7 @@ function selectAnswer(event){
     Array.from(answersContainer.children).forEach(button=>{
         if(button.dataset.correct === "true"){
             button.classList.add("correct")
-        }else{
+        }else if(button === selectdButton){
             button.classList.add("incorrect")
         }
     });
@@ -142,7 +143,7 @@ function selectAnswer(event){
         }else{
             showResults()
         }
-    },1000)
+    },800)
 }
 
 function showResults(){
