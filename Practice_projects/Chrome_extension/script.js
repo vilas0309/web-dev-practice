@@ -1,44 +1,46 @@
-
-// function saveLead(){
-//     console.log("Button clicked")
-// }
-let myLeades=["https://www.google.com"]
 const inputEl = document.getElementById("input-el")
-let inputBtn = document.getElementById("input-btn")
-const ulEl = document.getElementById("ulEl")
-let listItem = ""
+const inputBtn = document.getElementById("input-btn")
+const deleteBtn = document.getElementById("delete-btn")
+const ulEl = document.getElementById("ul-El")
+const tabBtn = document.getElementById("tab-btn")
+let myLeades = JSON.parse(localStorage.getItem("myleads"))
+
 showLeads()
-inputBtn.addEventListener("click", function() {
-    myLeades.push(inputEl.value)
-    // console.log(myLeades)
-    addLeads()
-    inputEl.value = ""
-})
 
-function addLeads(){
-    listItem +=`
-        <li>
-            <a target="_blank" href="${inputEl.value}">
-                ${inputEl.value}
-            </a>
-        </i>`;
-    ulEl.innerHTML +=listItem
-}
-
-function showLeads(){
-    let listItems = ""
-    myLeades.forEach(lead =>{
-        // let li = document.createElement("li")
-        // let a = document.createElement("a")
-        // a.textContent = lead
-        // li.textContent = lead
-        // ulEl.append(li)
-        listItems +=`
+function showLeads() {
+    let list = ""
+    myLeades.forEach(lead => {
+        list += `
         <li>
             <a target="_blank" href="${lead}">
                 ${lead}
             </a>
-        </i>`;
+        </li>`
     })
-    ulEl.innerHTML = listItems
+    ulEl.innerHTML = list
 }
+
+function addLeads(url) {
+    myLeades.push(url)
+    localStorage.setItem("myleads", JSON.stringify(myLeades))
+    showLeads()
+}
+
+inputBtn.addEventListener("click", function () {
+    if (inputEl.value) {
+        addLeads(inputEl.value)
+        inputEl.value = ""
+    }
+})
+
+deleteBtn.addEventListener("dblclick", function () {
+    myLeades = []
+    localStorage.setItem("myleads", JSON.stringify(myLeades))
+    showLeads()
+})
+
+tabBtn.addEventListener("click", function () {
+    chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+        addLeads(tabs[0].url)
+    })
+})

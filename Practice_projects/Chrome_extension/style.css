@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 10px;
     font-family: sans-serif;
-    min-width: 400px;
+    min-width: 450px;
 }
 
 input{
@@ -27,6 +27,22 @@ button{
 
 button:hover{
     background-color: #4c7634;
+}
+
+#delete-btn{
+    background-color: white;
+    color: #5f9341;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: 2px solid #5f9341;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#delete-btn:hover{
+    color: #324e22;
 }
 
 ul{
