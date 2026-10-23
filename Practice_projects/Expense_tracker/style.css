@@ -17,7 +17,7 @@ body{
 
 .container{
     width: 100%;
-    max-width: 1000px;
+    max-width: 900px;
     background-color: white;
     padding: 2rem;
     border-radius: 24px;
@@ -34,7 +34,7 @@ h1{
 }
 
 h2{
-    columns: #2d3748;
+    color: #2d3748;
     margin-bottom: 1rem;
     font-size: 1.23rem;
     font-weight: 500;        
@@ -110,12 +110,12 @@ h2{
 .transaction-container{
     height: 100%;
     display: flex;
-    font-display: column;
+    flex-direction: column;
 }
 
 #transaction-list{
     list-style: none;
-    max-height: 500px;
+    max-height: 317px;
     overflow-y: auto;
     padding-right: 8px;
     flex-grow: 1;
