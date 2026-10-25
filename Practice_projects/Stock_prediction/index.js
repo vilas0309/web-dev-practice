@@ -1,5 +1,5 @@
 import { dates } from './utils/dates.js'
-import { GoogleGenAI } from "@google/genai"
+import { GoogleGenAI, Tokens } from "@google/genai"
 
 const ai = new GoogleGenAI({
     apiKey: import.meta.env.VITE_GEMINI_API_KEY
@@ -78,14 +78,20 @@ async function fetchReport(data) {
 
     ]
     try{
-        const interaction = await ai.interactions.create({
-            model: "gemini-3.5-flash",
-            system_instruction : `You are a trading guru. Given data on share prices over the past 3 days,
+        const interaction = await ai.models.generateContent({
+            model: "gemini-3.5-flash-lite",
+            contents:[{
+                role:'user',
+                parts:[{text:'Analyze the following stock prices and give a short prediction:\n'+JSON.stringify(data)+`, note this I'm going to display it webpage it plain text don't use any styles or fonts`}]
+            }],
+            config:[{
+                systemInstruction:`You are a trading guru. Given data on share prices over the past 3 days,
                                 write a report of no more than 150 words describing the stocks performance and 
                                 recommending whether to buy, hold or sell`,
-            input: data ,
-            });
-        renderReport(interaction.output_text)
+            }]
+        });
+        // console.log(interaction.text)
+        renderReport(interaction.text)
     }catch(err){
         console.log('Error:'+err)
         loadingArea.innerHTML=`Unable to access AI. Please refresh and try again`
