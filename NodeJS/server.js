@@ -14,7 +14,13 @@ import http from "node:http"
 
 const PORT = 8000
 const server = http.createServer((req,res)=>{
-    res.end("Hello from the server!")
+    // To send a specific data only
+    res.write('This is some data \n')
+    res.write('This is some more data \n')
+  //res.emd(specific data,encryption type,callback function) 
+    res.end("Hello from the server!","utf8",()=> console.log("response ended"))
+    // send specific content type
+    // set status codes (200,400,etc)
+    // provide content (html,JSON,image)
 })
-
 server.listen(PORT,()=> console.log(`server running on port:${PORT}`))
