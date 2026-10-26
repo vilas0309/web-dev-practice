@@ -14,11 +14,29 @@ import http from "node:http"
 
 const PORT = 8000
 const server = http.createServer((req,res)=>{
+    //REQUEST OBJECT
+    const request=req.url
+    const reqMethod = req.method
+    // console.log(reqMethod)
+    //1.give us access to incoming data
+    //2.the url client used
+    // 3.the headers
+    // 4.any data sent
+    // 5.the method(GET,POST,DELETE )
+
+    //TO SEND DATA OVER HTTP FROM SERVER
     // To send a specific data only
     res.write('This is some data \n')
     res.write('This is some more data \n')
-  //res.emd(specific data,encryption type,callback function) 
-    res.end("Hello from the server!","utf8",()=> console.log("response ended"))
+    //TO END HTTPS RESPONSE
+  //res.emd(specific data,encryption type,callback function)
+  if (request === '/api' && reqMethod === 'GET'){
+    res.end("Hello from the server!")
+  }
+  else{
+    res.end("Wrong request")
+  } 
+    
     // send specific content type
     // set status codes (200,400,etc)
     // provide content (html,JSON,image)
